@@ -115,23 +115,14 @@
   </footer>
 
   <script>
-    // 모바일 메뉴 토글 (외부 라이브러리 없음)
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.getElementById('nav');
-    toggle?.addEventListener('click',()=>{
-      const open = nav.style.display !== 'block';
-      nav.style.display = open ? 'block' : 'none';
-      toggle.setAttribute('aria-expanded', String(open));
-    });
-
-    // 폼 알림 (데모)
-    const form = document.getElementById('contactForm');
-    const status = document.getElementById('formStatus');
-    form?.addEventListener('submit',(e)=>{
-      e.preventDefault();
-      status.textContent = '제출 완료! (이 데모는 서버 전송 없이 화면에만 표시됩니다)';
-      form.reset();
-    });
+    // 폼 알림 (데모) 
+    const form = document.getElementById('contactForm'); 
+    const status = document.getElementById('formStatus'); 
+    form?.addEventListener('submit',(e)=>{ 
+      e.preventDefault(); 
+      status.textContent = '제출 완료! (이 데모는 서버 전송 없이 화면에만 표시됩니다)'; 
+      form.reset(); 
+    }); 
 
     // 연도 표시
     document.getElementById('year').textContent = new Date().getFullYear();
