@@ -72,9 +72,9 @@
     <section id="features" class="wrap">
       <h2>기능</h2>
       <div class="grid">
-        <div class="card" data-ga-action="select_content" data-ga-category="feature" data-ga-label="simple"><h3>심플</h3><p class="muted">순수 HTML/CSS라서 누구나 쉽게 수정 가능.</p></div>
-        <div class="card" data-ga-action="select_content" data-ga-category="feature" data-ga-label="responsive"><h3>반응형</h3><p class="muted">그리드/플렉스 기반으로 모바일/PC 모두 깔끔.</p></div>
-        <div class="card" data-ga-action="select_content" data-ga-category="feature" data-ga-label="lightweight"><h3>가벼움</h3><p class="muted">외부 의존성 없이 번개처럼 로드.</p></div>
+        <a href="#" class="card" data-ga-action="select_content" data-ga-category="feature" data-ga-label="simple"><h3>심플</h3><p class="muted">순수 HTML/CSS라서 누구나 쉽게 수정 가능.</p></a>
+        <a href="#" class="card" data-ga-action="select_content" data-ga-category="feature" data-ga-label="responsive"><h3>반응형</h3><p class="muted">그리드/플렉스 기반으로 모바일/PC 모두 깔끔.</p></a>
+        <a href="#" class="card" data-ga-action="select_content" data-ga-category="feature" data-ga-label="lightweight"><h3>가벼움</h3><p class="muted">외부 의존성 없이 번개처럼 로드.</p></div>
       </div>
     </section>
 
@@ -115,14 +115,23 @@
   </footer>
 
   <script>
-    // 폼 알림 (데모) 
-    const form = document.getElementById('contactForm'); 
-    const status = document.getElementById('formStatus'); 
-    form?.addEventListener('submit',(e)=>{ 
-      e.preventDefault(); 
-      status.textContent = '제출 완료! (이 데모는 서버 전송 없이 화면에만 표시됩니다)'; 
-      form.reset(); 
-    }); 
+    // 모바일 메뉴 토글 (외부 라이브러리 없음)
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('nav');
+    toggle?.addEventListener('click',()=>{
+      const open = nav.style.display !== 'block';
+      nav.style.display = open ? 'block' : 'none';
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+
+    // 폼 알림 (데모)
+    const form = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+    form?.addEventListener('submit',(e)=>{
+      e.preventDefault();
+      status.textContent = '제출 완료! (이 데모는 서버 전송 없이 화면에만 표시됩니다)';
+      form.reset();
+    });
 
     // 연도 표시
     document.getElementById('year').textContent = new Date().getFullYear();
