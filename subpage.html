@@ -9,94 +9,89 @@
 
   gtag('config', 'G-9MQDZPZQL7');
 </script>
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>서브 페이지</title>
-  <style>
-    :root{--bg:#0b1220;--panel:#121a2b;--line:#21314f;--txt:#e7ecf3;--muted:#b7c0d1}
-    *{box-sizing:border-box}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.6;margin:0;background:var(--bg);color:var(--txt)}
-    a{color:#8ab4ff;text-decoration:none}
-    header{position:sticky;top:0;background:rgba(11,18,32,.8);backdrop-filter:saturate(120%) blur(10px);border-bottom:1px solid var(--line)}
-    .wrap{max-width:1080px;margin:0 auto;padding:16px}
-    .row{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    nav a{margin:0 10px}
-    .btn{display:inline-block;padding:10px 14px;border:1px solid var(--line);background:#182745;border-radius:10px;color:var(--txt)}
-    .btn:hover{filter:brightness(1.15)}
-    .hero{padding:64px 16px}
-    .hero .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:32px}
-    h1{font-size:36px;margin:0 0 8px}
-    h2{margin:0 0 12px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px;cursor:pointer;}
-    .muted{color:var(--muted)}
-    footer{padding:32px 16px;border-top:1px solid var(--line);margin-top:40px}
-    input,textarea,select{width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);background:#0f1625;color:var(--txt)}
-    label{display:block;margin:10px 0 6px}
-    .nav-toggle{display:none}
-    @media (max-width:640px){
-      nav{display:none}
-      .nav-toggle{display:inline-block}
-    }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>서브 페이지</title>
+<style>
+  :root{--bg:#0b1220;--panel:#121a2b;--line:#21314f;--txt:#e7ecf3;--muted:#b7c0d1}
+  *{box-sizing:border-box}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.6;margin:0;background:var(--bg);color:var(--txt)}
+  a{color:#8ab4ff;text-decoration:none}
+  header{position:sticky;top:0;background:rgba(11,18,32,.8);backdrop-filter:saturate(120%) blur(10px);border-bottom:1px solid var(--line)}
+  .wrap{max-width:1080px;margin:0 auto;padding:16px}
+  .row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  nav a{margin:0 10px}
+  .btn{display:inline-block;padding:10px 14px;border:1px solid var(--line);background:#182745;border-radius:10px;color:var(--txt)}
+  .btn:hover{filter:brightness(1.15)}
+  .hero{padding:64px 16px}
+  .hero .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:32px}
+  h1{font-size:36px;margin:0 0 8px}
+  h2{margin:0 0 12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px;cursor:pointer;}
+  .muted{color:var(--muted)}
+  footer{padding:32px 16px;border-top:1px solid var(--line);margin-top:40px}
+  input,textarea,select{width:100%;padding:10px;border-radius:10px;border:1px solid var(--line);background:#0f1625;color:var(--txt)}
+  label{display:block;margin:10px 0 6px}
+  .nav-toggle{display:none}
+  @media (max-width:640px){
+    nav{display:none}
+    .nav-toggle{display:inline-block}
+  }
+</style>
 </head>
 <body>
-  <header>
-    <div class="wrap row">
-      <strong>MySite</strong>
-      <button class="btn nav-toggle" aria-controls="nav" aria-expanded="false">메뉴</button>
-      <nav id="nav" aria-label="주요 메뉴">
-        <a href="/">홈</a>
-        <a href="/#features">기능</a>
-        <a href="subpage.html">서브 페이지</a>
-        <a href="index.html#features">기능</a>
-        <a href="index.html#gallery">갤러리</a>
-        <a href="index.html#contact">문의</a>
-        <a class="btn" href="index.html#cta">지금 시작</a>
-      </nav>
+<header>
+  <div class="wrap row">
+    <strong>MySite</strong>
+    <button class="btn nav-toggle" aria-controls="nav" aria-expanded="false">메뉴</button>
+    <nav id="nav" aria-label="주요 메뉴">
+      <a href="index.html">홈</a>
+      <a href="subpage.html">서브 페이지</a>
+      <a href="index.html#features">기능</a>
+      <a href="index.html#gallery">갤러리</a>
+      <a href="index.html#contact">문의</a>
+      <a class="btn" href="index.html#cta">지금 시작</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero wrap">
+    <div class="panel">
+      <h1>서브 페이지입니다.</h1>
+      <p class="muted">이 페이지에서는 서브 페이지 콘텐츠를 테스트할 수 있습니다.</p>
+      <p>
+        <a class="btn" href="index.html">홈으로 돌아가기</a>
+      </p>
     </div>
-  </header>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <small class="muted">© <span id="year"></span> MySite. All rights reserved.</small>
+  </div>
+</footer>
+<script>
+  // 모바일 메뉴 토글 (외부 라이브러리 없음)
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('nav');
+  toggle?.addEventListener('click',()=>{
+    const open = nav.style.display !== 'block';
+    nav.style.display = open ? 'block' : 'none';
+    toggle.setAttribute('aria-expanded', String(open));
+  });
 
-  <main>
-    <section class="hero wrap">
-      <div class="panel">
-        <h1>서브 페이지입니다.</h1>
-        <p class="muted">이 페이지에서는 서브 페이지 콘텐츠를 테스트할 수 있습니다.</p>
-        <p>
-          <a class="btn" href="index.html">홈으로 돌아가기</a>
-        </p>
-      </div>
-    </section>
-  </main>
+  // 폼 알림 (데모)
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+  form?.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    status.textContent = '제출 완료! (이 데모는 서버 전송 없이 화면에만 표시됩니다)';
+    form.reset();
+  });
 
-  <footer>
-    <div class="wrap">
-      <small class="muted">© <span id="year"></span> MySite. All rights reserved.</small>
-    </div>
-  </footer>
-
-  <script>
-    // 모바일 메뉴 토글 (외부 라이브러리 없음)
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.getElementById('nav');
-    toggle?.addEventListener('click',()=>{
-      const open = nav.style.display !== 'block';
-      nav.style.display = open ? 'block' : 'none';
-      toggle.setAttribute('aria-expanded', String(open));
-    });
-
-    // 폼 알림 (데모)
-    const form = document.getElementById('contactForm');
-    const status = document.getElementById('formStatus');
-    form?.addEventListener('submit',(e)=>{
-      e.preventDefault();
-      status.textContent = '제출 완료! (이 데모는 서버 전송 없이 화면에만 표시됩니다)';
-      form.reset();
-    });
-
-    // 연도 표시
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  // 연도 표시
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
